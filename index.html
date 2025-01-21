@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- The "lang" attribute specifies the language of the document's content for accessibility and SEO. -->
+
+<head>
+    <!-- Character Encoding -->
+    <!-- Specifies the character encoding for the HTML document, ensuring proper display of text. -->
+    <meta charset="UTF-8" />
+
+    <!-- Responsive Design -->
+    <!-- Makes the webpage responsive to different devices by controlling the viewport's size and scale. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Redirect Meta Tag -->
+    <!-- The "http-equiv='refresh'" tag automatically refreshes the page or redirects the user after a specified time. 
+    In this example, it redirects the user to "https://example.com" after 5 seconds. -->
+    <!--<meta http-equiv="refresh" content="5; URL=https://example.com"> -->
+
+    <!-- Compatibility Meta Tag -->
+    <!-- The "http-equiv='X-UA-Compatible'" tag ensures compatibility with older versions of Internet Explorer. 
+    Setting "IE=edge" forces the use of the latest rendering engine available. -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- SEO Metadata -->
+    <!-- These meta tags provide information to search engines to help with indexing and ranking. -->
+    <meta name="description" content="A comprehensive guide to meta tags." />
+    <meta name="keywords" content="HTML, meta tags, SEO, Open Graph" />
+    <meta name="author" content="Jane Doe" />
+    <meta name="keywords" content="example, meta, tags" scheme="Dublin Core">
+    <meta name="robots" content="noindex"> <!-- check if noindex will restrict from adding content -->
+
+    <!-- Open Graph Metadata -->
+    <!-- These meta tags follow the Open Graph protocol to define how the page should appear when shared on social media platforms like Facebook, LinkedIn, etc. -->
+    <meta property="og:title" content="Guide to Meta Tags" />
+    <meta property="og:description" content="Learn how to use meta tags effectively." />
+    <meta property="og:image" content="https://example.com/og-image.jpg" />
+    <meta property="og:url" content="https://example.com/meta-guide" />
+    <meta property="og:type" content="article" />
+
+    <!-- Itemprop Metadata -->
+    <!-- Defines structured data for specific elements using the Schema.org vocabulary. Improves how search engines understand the content. -->
+    <meta itemprop="authorr" content="sharma sonu" />
+</head>
+
+<body>
+    <!-- Structured Data (Schema.org) -->
+    <!-- These elements define structured data for the content of the webpage. They help search engines create rich snippets in search results. -->
+    <div itemscope itemtype="https://schema.org/Article">
+        <meta itemprop="name" content="Guide to Meta Tags" />
+        <meta itemprop="description" content="An in-depth guide to meta tags and their attributes." />
+        <meta itemprop="author" content="Jane Doe" />
+        <meta itemprop="datePublished" content="2025-01-07" />
+    </div>
+
+    <!-- Page Content -->
+    <!-- Visible content for users. The "itemprop" here defines additional structured data for a specific element. -->
+    <h1>Meta Tags Guide</h1>
+    <span itemprop="director">Sonu Sharma</span>
+</body>
+
+</html>
